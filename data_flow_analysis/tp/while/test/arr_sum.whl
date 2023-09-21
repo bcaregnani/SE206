@@ -1,0 +1,40 @@
+//
+//
+// While language, example function
+// Function to sum elements of an array
+// args:
+//        - arr : array to be sumed
+// returns:
+//        - sum : sum of elements in the array
+//
+//
+
+
+
+
+fun arr_sum(int *arr, int n)
+begin
+  int *e;
+  e = arr + n;
+  int sum = 0;
+  while arr < e do
+    sum = sum + *arr;
+    arr = arr + 1;
+  end;
+  return sum;
+end
+
+int x[3] = {2, 4, 1};
+
+fun main
+begin
+  int i = 0;
+  int sum = 0;
+  while(i < 3) do
+    printint(x[i]);
+    i = i + 1;
+  end;
+  sum = arr_sum(&x[0],3);
+  printint(sum);
+  return sum == 7;
+end

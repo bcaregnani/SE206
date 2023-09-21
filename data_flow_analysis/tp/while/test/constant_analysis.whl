@@ -1,0 +1,17 @@
+//
+//
+//
+// While language, example function
+// Constant Analysis
+//
+//
+//
+//
+//
+
+fun main
+begin
+    int x = 1;
+    int y = 2;
+    return x + y ;
+end

@@ -1,0 +1,22 @@
+//
+//
+//
+// While language, example function.
+// Tricking the constant regiser analysis.
+// The program always retuns 7, but WCRA 
+// can not determine the result.
+//
+//
+//
+
+fun main
+begin
+    int x = 1;
+    int y = 2;
+    if x < y then
+        x = 5;
+    else
+        x = y;
+    end;
+    return x + y ;
+end
